@@ -1,0 +1,226 @@
+*{
+  margin:0;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
+
+.mini-container-no-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mini-container-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.mini-container-card button, .mini-container-no-card button{
+  width: 50%;
+  margin-top: 20px;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  border-style: none;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.mini-container-card button:hover, .mini-container-no-card button:hover{
+  width: 50%;
+  margin-top: 20px;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  color: black;
+  font-weight: 600;
+  border-style: none;
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.3s;
+}
+
+
+
+.user-card-front, .user-card-back{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 288px;
+  height: 340px;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: visible;
+  padding-bottom:15px;
+  box-shadow: 0px 0px 5px rgba(123, 123, 123, 0.4)
+}
+
+
+
+.profile-picture{
+  margin-top: 10px;
+  border-radius: 50px;
+  width: 80px;
+  height: auto;
+
+
+}
+
+.user-card-front h3, .user-card-back h3{
+  margin-top: -50px;
+  color: #08082B;
+
+}
+
+.user-card-front h3{
+  margin-top: -70px;
+}
+
+
+.user-card-front p, .user-card-back p{
+  margin-top: -70px;
+  font-size: 15px;
+  color: #08082B;
+}
+
+.user-card-front p{
+  margin-top: -80px;
+
+}
+
+.user-card-back p{
+  margin-top: -60px;
+  margin-bottom: 10px;
+
+}
+
+.user-card-front button, .user-card-back button{
+  margin-top: -50px;
+  display:block;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  border-style: none;
+  background-color: #08082B;
+  border: 2px solid white;
+  perspective: 1000px;
+
+}
+
+.user-card-back button{
+  font-size: 12px;
+}
+
+.user-card-back button{
+  width: 80%;
+}
+
+
+.user-card-front button:hover{
+  margin-top: -50px;
+  display:block;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  color: #08082B;
+  font-weight: 600;
+  border: 2px solid #08082B;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(123, 123, 123, 0.4);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.user-card-back button:hover{
+  margin-top: -50px;
+  display:block;
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  color: #08082B;
+  font-weight: 600;
+  border: 2px solid #08082B;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(123, 123, 123, 0.4);
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+.image-container { 
+  display: flex; 
+  justify-content: flex-start; /* Ensure this is applied */ 
+  align-items: center; /* Optional: Ensures vertical centering */ 
+  width: 80%; 
+  margin-bottom: -60px
+}
+.left-arrow{
+  width: 15px;
+  height: auto;
+  filter: opacity(0.2) drop-shadow(0 0 0 #08082B);
+  transition: 0.3s;
+  cursor: pointer;
+
+  
+}
+
+.left-arrow:hover{
+  width: 15px;
+  height: auto;
+  filter: opacity(0.5) drop-shadow(0 0 0 blue);
+
+
+}
